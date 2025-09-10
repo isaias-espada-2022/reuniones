@@ -18,7 +18,8 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests().requestMatchers("/api/*").hasRole("API_USER")
+        http.authorizeHttpRequests().requestMatchers("/api/*", "/api/rest/**")
+                    .hasRole("API_USER")
                 .and().authorizeHttpRequests().requestMatchers("/*").authenticated()
                 .and().formLogin().loginPage("/login").permitAll()
                 .and().logout().permitAll()
