@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>es.isaias.springboot</groupId>
 	<artifactId>reuniones</artifactId>
-	<version>0.0.2-RELEASE</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>reuniones</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -69,7 +69,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
 
 	</dependencies>
